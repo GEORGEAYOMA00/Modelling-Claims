@@ -1,2 +1,15 @@
-# Modelling-Claims
-Modelling Car Insurance Claim Outcomes
+# Modelling Car Insurance Claim Outcomes
+An insurance company operating in a large and competitive market where car insurance is legally required, sought to optimize their pricing and risk assessment by predicting whether a customer would make a claim during the policy period. Due to limited expertise and infrastructure for deploying machine learning models, they requested a simple, single-feature model that could deliver the highest accuracy. My role was to analyze their customer data, identify the most predictive feature, and provide actionable insights to guide their initial model deployment.
+
+Key Insights: 
+The analysis revealed that driving experience is the single most predictive feature, achieving an accuracy of 77.71%.
+Impact and Implications: The project’s impact lies in its ability to enable a simplified and cost-effective model deployment, focusing on a single, interpretable feature that requires minimal infrastructure and technical expertise. By identifying driving experience as the most predictive feature, the company can refine its pricing strategies to offer competitive rates to low-risk customers while mitigating exposure to high-risk groups. Additionally, the findings provide a foundation for customer segmentation, allowing for targeted marketing and personalized policy offerings based on driving experience. While the model was designed for simplicity, it also establishes a scalable framework for future enhancements, enabling the company to incorporate additional features as their infrastructure and expertise grow, further improving predictive performance.
+
+Approach:
+Data Exploration: Loaded and explored the dataset (car_insurance.csv) to understand its structure, identify key variables, and assess data quality.
+Data Cleaning: Addressed missing values to ensure the dataset was complete and ready for modeling. Missing data was handled using appropriate imputation techniques to maintain data integrity and avoid bias.
+Model Preparation: Built univariate logistic regression models for each feature, predicting the likelihood of a claim (outcome) based on that feature alone. Stored all models in a models list for further evaluation.
+Performance Measurement: Evaluated the performance of each model by computing the confusion matrix and calculating the accuracy for each feature. Accuracy was chosen as the primary metric to align with the company’s goal of deploying a simple and reliable model.
+Feature Selection: Identified the feature with the highest accuracy as the best-performing predictor. Created a summary DataFrame to clearly communicate the results, highlighting the top-performing feature and its corresponding accuracy.
+
+Conclusion: This project demonstrates my ability to approach business challenges with a highly analytical mindset, leveraging data to deliver actionable insights. By identifying driving experience as the most predictive feature, I provided the company with a practical, high-impact solution to improve their pricing and risk assessment processes. This work not only addressed their immediate needs but also laid the groundwork for future advancements in their data-driven decision-making capabilities.
